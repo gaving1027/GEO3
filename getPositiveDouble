@@ -1,0 +1,29 @@
+import java.util.Scanner;
+
+public class TrainerProject {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner scanner = new Scanner(System.in);
+		// Call summary method
+		printSummary();
+	
+	}
+
+	private static void printSummary() {
+		// TODO Auto-generated method stub
+	
+		Scanner input = new Scanner(System.in);
+		
+		double weight = getPositiveDouble(input, "Enter athlete weight: ");
+		double height = getPositiveDouble(input, "Enter athlete height: ");
+		
+		double bmi = 703 * weight / (height * height);
+		
+		System.out.println("BMI: " + bmi);
+	}
+
+	private static double getPositiveDouble(Scanner input, String string) {
+		// TODO Auto-generated method stub
+		return 0;
+		input.close();
